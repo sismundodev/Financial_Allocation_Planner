@@ -82,7 +82,7 @@ export default function Login() {
         </div>
 
         {/* Heading */}
-        <div className="space-y-2 text-start">
+        <div className="space-y-2 text-center">
           <h1
             className="text-3xl tracking-tight"
             style={{ color: "#000", fontWeight: 900 }}
@@ -109,7 +109,7 @@ export default function Login() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@email.com"
               required
-              className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-sm"
+              className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-base"
             />
           </div>
 
@@ -125,7 +125,7 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
                 required
-                className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-sm pr-10"
+                className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-base pr-10"
               />
               <button
                 type="button"
@@ -150,7 +150,7 @@ export default function Login() {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   placeholder="••••••••"
                   required
-                  className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-sm pr-10"
+                  className="w-full px-4 py-3.5 bg-gray-50 text-gray-800 placeholder-gray-400 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-black transition text-base pr-10"
                 />
                 <button
                   type="button"

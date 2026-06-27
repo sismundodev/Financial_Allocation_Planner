@@ -1,4 +1,5 @@
 // Path: pages/Login.tsx
+import { useNavigate } from "react-router-dom";
 
 import React, { useState } from "react";
 
@@ -10,6 +11,7 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,6 +23,7 @@ export default function Login() {
     }
 
     console.log({ mode, email, password });
+    navigate("/home");
   };
 
   const switchMode = (next: "signin" | "signup") => {
